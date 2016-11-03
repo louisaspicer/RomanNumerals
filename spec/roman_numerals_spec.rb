@@ -20,4 +20,8 @@ describe RomanNumerals do
   it "should be able to convert 996 to CMIXVI" do
     expect(RomanNumerals.convert(996)).to eq("CMXCVI")
   end
+
+  it "shoudl be able to convert 2500 to MMD" do
+    expect(RomanNumerals.convert(2500)).to eq("MMD")
+  end
 end

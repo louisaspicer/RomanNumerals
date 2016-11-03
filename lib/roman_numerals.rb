@@ -12,7 +12,7 @@ class RomanNumerals
       #then each time it subtracts 100(the key) off of the 'number'
       #then it will be left with 50, so when it gets to the 50 key,
       #it can only do it 1 time, so will add "L" to the end once.
-      (number / k).times {roman_numeral << v; number = number - k}
+      (number / k).times {roman_numeral << v; number -= k}
     end
     roman_numeral
   end
